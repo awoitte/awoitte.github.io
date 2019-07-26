@@ -1,0 +1,68 @@
+#!/bin/sh -e
+
+SOURCE_DIR="src"
+STATIC_DIR="static"
+OUT_DIR="."
+HEADER_FILE="$SOURCE_DIR/_header.html"
+FOOTER_FILE="$SOURCE_DIR/_footer.html"
+
+get_filename_without_extension () {
+	echo "$1" | cut -f 1 -d "." | cut -f 2 -d "/"
+}
+
+convert_to_html() {
+	if [ -r "$1" ]; then
+		lowdown "$1"
+	fi
+}
+
+construct_html_from_md_file () {
+	cat "$HEADER_FILE"
+	generate_links
+	echo "<article>"
+	convert_to_html "$1"
+	echo "</article>"
+	cat "$FOOTER_FILE"
+}
+
+generate_link() {
+	if [ $# -lt 2 ]; then
+		LINK_TEXT="$1"
+		LINK="$1.html"
+	else
+		LINK_TEXT="$2"
+		LINK="$1"
+	fi
+	echo "<li><a href='$LINK'>$LINK_TEXT</a></li>"
+}
+
+generate_links () {
+	echo "<ul class='links'>"
+	generate_link "/" "Home"
+	for FILE in $SOURCE_DIR/*.md; do
+		NO_EXTENSION=$(get_filename_without_extension "$FILE")
+		case "$NO_EXTENSION" in
+			index) true;;
+			*) generate_link "$NO_EXTENSION"
+		esac
+	done
+
+	for FILE in $STATIC_DIR/*.html; do
+		NO_EXTENSION=$(get_filename_without_extension "$FILE")
+		generate_link "$FILE" "$NO_EXTENSION"
+	done
+	echo "</ul>"
+}
+
+build_site() {
+	for FILE in $SOURCE_DIR/*.md; do
+		NO_EXTENSION=$(get_filename_without_extension "$FILE")
+		OUT_FILE="$OUT_DIR/$NO_EXTENSION.html"
+		echo "" > "$OUT_FILE"
+		if [ -w "$OUT_FILE" ]; then
+			construct_html_from_md_file "$FILE" >> "$OUT_FILE"
+		fi
+	done
+}
+
+./clean > /dev/null && build_site
