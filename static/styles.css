@@ -19,6 +19,7 @@ footer {
 
 article {
 	background-color: #BEA;
+	border-radius: 10px;
 	text-align: justify;
 	max-width: 500px;
 	padding: 50px;
