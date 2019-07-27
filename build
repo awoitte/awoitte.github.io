@@ -54,13 +54,17 @@ generate_links () {
 	echo "</ul>"
 }
 
+add_prettyprint_class_to_code () {
+	sed 's/<code/<code class="prettyprint"/g'
+}
+
 build_site() {
 	for FILE in $SOURCE_DIR/*.md; do
 		NO_EXTENSION=$(get_filename_without_extension "$FILE")
 		OUT_FILE="$OUT_DIR/$NO_EXTENSION.html"
 		echo "" > "$OUT_FILE"
 		if [ -w "$OUT_FILE" ]; then
-			construct_html_from_md_file "$FILE" >> "$OUT_FILE"
+			construct_html_from_md_file "$FILE" | add_prettyprint_class_to_code >> "$OUT_FILE"
 		fi
 	done
 }
