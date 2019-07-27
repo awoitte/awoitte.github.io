@@ -38,7 +38,7 @@ generate_link() {
 
 generate_links () {
 	echo "<ul class='links'>"
-	generate_link "/" "Home"
+	generate_link "index.html" "Home"
 	for FILE in $SOURCE_DIR/*.md; do
 		NO_EXTENSION=$(get_filename_without_extension "$FILE")
 		case "$NO_EXTENSION" in
@@ -66,3 +66,5 @@ build_site() {
 }
 
 ./clean > /dev/null && build_site
+
+echo "website built successfully"
