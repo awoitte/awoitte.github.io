@@ -1,377 +1,387 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-		<style type="text/css">
-			ul {
-				list-style-type: square;
-				margin: 0;
-				padding-top: 5px;
-			}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="simple.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-			ul.sub-list {
-				list-style-type: circle;
-				margin-left: 40px;
-			}
+  <body>
+    <header>
+      <h1>Alicia Woitte</h1>
 
-			hr {
-				margin: 25px 0;
-			}
+      <p>
+        <a href="mailto:aliciawoitte@gmail.com">aliciawoitte@gmail.com</a>
+        &nbsp; Albany, NY, USA
+      </p>
 
-			.name {
-				font-size: 18pt;
-				font-family: "Trebuchet MS";
-			}
+      <p>
+        <a href="https://github.com/awoitte"> github.com/awoitte </a>
+        &nbsp;
+        <a href="http://www.linkedin.com/in/awoitte">
+          www.linkedin.com/in/awoitte
+        </a>
+      </p>
+    </header>
 
-			h2 {
-				font-weight: bold;
-				font-size: 12pt;
-				font-family: "Trebuchet MS";
-				line-height: 1.0;
-				text-align: left
-			}
+    <article>
+      <h4>Summary Of Qualifications</h4>
+      <ul>
+        <li>Over <i>fifteen</i> years of on the job programming experience</li>
+        <li>
+          Full-Stack Developer, familiar with all tiers of web applications
+        </li>
+        <li>Known for hard work and speed of production</li>
+      </ul>
 
-			.spacer {
-				width: 100%;
-				height: 1px;
-				padding: 10px 0;
-			}
+      <p>
+        I'm a Senior Software Developer seeking a remote position architecting
+        and maintaining applications. Ideally in the gaming or education
+        sectors.
+      </p>
 
-			.company {
-				font-weight: bold;
-			}
+      <hr />
 
-			.address {
-				text-align: center;
-			}
+      <h4>Proficiencies</h4>
 
-			.intent {
-				text-align: center;
-				width: 80%;
-				margin: 0 10%;
-			}
+      <div class="proficiencies">
+        <div class="proficiency-block">
+          <ul>
+            <li>JavaScript / TypeScript</li>
+            <li>CSS3 / HTML5</li>
+            <li>Less / SASS</li>
+            <li>React / Preact / Backbone.js</li>
+            <li>Elm</li>
+            <li>SaaS Applications</li>
+            <li>node.js (including server-side architecture)</li>
+            <li>Grunt / Babel / Webpack / Require.js</li>
+            <li>JSON / AJAX / REST / Web APIs</li>
+            <li>General command line (CLI) fluency</li>
+            <li>BSD, Linux, MacOS, Windows</li>
+          </ul>
+        </div>
+        <div class="proficiency-block">
+          <ul>
+            <li>C</li>
+            <li>C#</li>
+            <li>Go</li>
+            <li>TDD / BDD</li>
+            <li>Unity / XNA / MonoGame</li>
+            <li>Agile Methodologies (including SCRUM)</li>
+            <li>Git / CVS / SVN / Mercurial</li>
+            <li>Bug Tracking Software (TFS / Jira)</li>
+            <li>Visual Studio / Visual Studio Code</li>
+            <li>GitHub / GitLab / Bitbucket</li>
+            <li>Adobe Creative Suite (especially Photoshop)</li>
+          </ul>
+        </div>
+      </div>
 
-			.proficiencies {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-			}
+      <hr />
 
-			.proficiency-block {
-				flex: 1 0 200px;
-				margin: 0;
-				padding: 0;
-			}
+      <h4>Experience</h4>
 
-			body {
-				margin: auto;
-				background-color: #ffffff;
-				max-width: 468pt;
-				padding: 72pt 72pt 72pt 72pt
-			}
+      <p>
+        <b>ActiveState / Dec 2019 - Aug 2021 / Ontario, Canada (Remote)</b>
+      </p>
 
-			.title {
-				padding-top: 0pt;
-				color: #000000;
-				font-size: 21pt;
-				padding-bottom: 0pt;
-				font-family: "Trebuchet MS";
-				text-align: center
-			}
+      <p>
+        <u>Senior Software Developer</u>
+      </p>
+      <ul>
+        <li>Spearhead implementation of new major features to the platform</li>
+        <li>Maintain and improve existing code-base</li>
+        <li>
+          Review code submissions both inside and outside my team to ensure
+          correctness and quality
+        </li>
+        <li>
+          Consult with other teams and project managers to ensure smooth
+          implementation of cross-platform features
+        </li>
+        <li>
+          Audit and refactor codebase to detect security issues and reduce
+          code-debt
+        </li>
+        <li>Be an expert and stakeholder in many parts of the platform</li>
+      </ul>
 
-			li {
-				color: #000000;
-				font-size: 10pt;
-				font-family: "Arial";
-				line-height: 1.3;
-			}
+      <blockquote class="project">
+        <h6>ActiveState Platform</h6>
+        <p>
+          <i>
+            Elm / Go / Python / PostgreSQL / HTML5 / CSS / SASS / Docker /
+            Gazelle
+          </i>
+        </p>
 
-			p {
-				margin: 0;
-				color: #000000;
-				font-size: 10pt;
-				font-family: "Arial"
-			}
+        <p>
+          All-In-One Supply Chain for Python, Perl, and Tcl. The ActiveState
+          platform fulfills many roles:
+        </p>
 
-			.project {
-				margin-top: 10px;
-				font-style: italic;
-				list-style: none;
-			}
-		</style>
-	</head>
+        <ul class="sub-list">
+          <li>Package Manager (with Intelligent Dependency Resolution)</li>
+          <li>Dependency Version Control</li>
+          <li>Open-Source Security and Indemnification</li>
+          <li>Security Vulnerability Tracking and Alerts</li>
+          <li>Developer Tooling (replace the README and Makefile)</li>
+        </ul>
 
-	<body>
-		<p class="name title">
-			Alicia Woitte
-		</p>
-		<p class="address">
-			<a href="mailto:aliciawoitte@gmail.com">aliciawoitte@gmail.com</a>, Hamilton, ON, Canada
-		</p>
-		<p class="address">
-			<a href="https://github.com/awoitte">github.com/awoitte</a>
-			&nbsp;
-			<a href="http://www.linkedin.com/in/awoitte">www.linkedin.com/in/awoitte</a>
-		</p>
-		<hr>
-		<h2>
-			Summary Of Qualifications
-		</h2>
-		<ul>
-			<li>
-				Over ten years of on the job programming experience
-			</li>
-			<li>
-				Full-stack developer, familiar with all tiers of web applications
-			</li>
-			<li>
-				Known for hard work and speed of production
-			</li>
-		</ul>
+        <p><a href="https://www.activestate.com/">Company Website</a></p>
+      </blockquote>
 
-		<p class="spacer">
-		</p>
+      <hr />
 
-		<p class="intent">
-			I'm a Full-Stack Web Developer seeking a remote position architecting and maintaining a web application. Ideally in the gaming
-			or education sectors.
-		</p>
-		<hr>
-		<h2>
-			Proficiencies
-		</h2>
-		<div class="proficiencies">
-			<div class="proficiency-block">
-				<ul>
-					<li>
-						JavaScript / ES2017
-					</li>
-					<li>
-						CSS3 / HTML5
-					</li>
-					<li>
-						Less / SASS
-					</li>
-					<li>
-						Backbone.js
-					</li>
-					<li>
-						React / Preact
-					</li>
-					<li>
-						Require.js
-					</li>
-					<li>
-						node.js (including server-side architecture)
-					</li>
-					<li>
-						Grunt / Babel / Webpack
-					</li>
-					<li>
-						JSON / AJAX / REST / Web APIs
-					</li>
-					<li>
-						General command line (CLI) fluency
-					</li>
-					<li>
-						BSD, Linux, MacOS, Windows
-					</li>
-				</ul>
-			</div>
-			<div class="proficiency-block">
-				<ul>
-					<li>
-						C
-					</li>
-					<li>
-						C#
-					</li>
-					<li>
-						.NET (including ASP.NET MVC)
-					</li>
-					<li>
-						TDD / BDD
-					</li>
-					<li>
-						SaaS Applications
-					</li>
-					<li>
-						Agile Methodologies (including SCRUM)
-					</li>
-					<li>
-						Git / CVS / SVN / Mercurial
-					</li>
-					<li>
-						Bug Tracking Software (TFS / Jira)
-					</li>
-					<li>
-						Visual Studio 2010 - 2017
-					</li>
-					<li>
-						GitHub / GitLab / Bitbucket
-					</li>
-					<li>
-						Adobe Creative Suite (especially Photoshop)
-					</li>
-				</ul>
-			</div>
-		</div>
-		<hr>
-		<h2>
-			Experience
-		</h2>
+      <p>
+        <b>
+          SimplyAnalytics Inc. / Mar 2018 - Aug 2019 / Ontario, Canada (Remote)
+        </b>
+      </p>
+      <p>
+        <u>Front-End Developer</u>
+      </p>
+      <ul>
+        <li>
+          Maintain and improve the javascript architecture for a powerful,
+          browser-based application.
+        </li>
+        <li>
+          Exceed coding standard expectations by building and maintaining custom
+          linters for the project.
+        </li>
+        <li>
+          Work closely with other Front-End Developers to maintain consistent
+          styling and structure.
+        </li>
+        <li>
+          Contribute to project planning, work estimates, and documentation.
+        </li>
+        <li>
+          Work in concert with Server-Side and QA teams to ensure correct and
+          timely improvements.
+        </li>
+      </ul>
 
-		<p class="company">
-			SimplyAnalytics Inc. / Mar 2018 - Aug 2019 / Ontario, Canada (Remote)
-		</p>
-		<p>
-			Front-End Developer
-		</p>
-		<ul>
-			<li>
-				Maintained and improved the javascript architecture for a powerful, browser-based application.
-			</li>
-			<li>
-				Exceeded coding standard expectations by building and maintaining custom linters for the project.
-			</li>
-			<li>
-				Worked closely with other Front-End Developers to maintain consistent styling and structure.
-			</li>
-			<li>
-				Contributed to project planning, work estimates, and documentation.
-			</li>
-			<li>
-				Worked in concert with Server-Side and QA teams to ensure correct and timely improvements.
-			</li>
-			<li class="project">
-				SimplyAnalytics
-			</li>
-		</ul>
-		<ul class="sub-list">
-			<li>
-				JavaScript (ES2017) / HTML5 / CSS / SASS / Ext.js / Webpack / Babel
-			</li>
-			<li>
-				A Single page application (SPA) for mapping and comparing large quantities of survey data.
-				Of utmost priority is an intuitive and powerful user interface that helps highlight the important information.
-			</li>
-		</ul>
+      <blockquote class="project">
+        <h6>SimplyAnalytics</h6>
+        <p>
+          <i>
+            JavaScript (ES2017) / HTML5 / CSS / SASS / Ext.js / Webpack / Babel
+          </i>
+        </p>
 
-		<p class="spacer">
-		</p>
+        <p>
+          A Single page application (SPA) for mapping and comparing large
+          quantities of survey data. Of utmost priority is an intuitive and
+          powerful user interface that helps highlight the important
+          information.
+        </p>
 
-		<p class="company">
-			Confirmit Inc. / Feb 2014 - Nov 2015 / San Francisco, CA
-		</p>
-		<p>
-			Front-End Developer (Lead / Architect)
-		</p>
-		<ul>
-			<li>
-				Created and maintained the front-end for web applications used by global 5000 companies
-			</li>
-			<li>
-				Took the initiative and designed, built, and maintained a modular UI framework used to rapidly build applications
-			</li>
-			<li>
-				Taught bleeding-edge client-side development techniques to other developers in the company
-			</li>
-			<li>
-				Followed the Agile development process, attended and hosted daily SCRUM meetings
-			</li>
-			<li>
-				Used SVN and Git to manage software changes with other developers
-			</li>
-			<li>
-				Contributed to a continuous development process in order to smoothly deliver a SaaS product
-			</li>
-			<li class="project">
-				Action Management
-			</li>
-		</ul>
-		<ul class="sub-list">
-			<li>
-				JavaScript / HTML5 / CSS / Backbone.js / Require.js / Mustache / Grunt / Jasmine
-			</li>
-			<li>
-				A RESTful web app which identifies issues that customers have and quickly assigning actions to resolve them. Implements a
-				system managing large amounts of customer survey data.
-			</li>
-		</ul>
+        <p><a href="https://simplyanalytics.com/">Company Website</a></p>
+      </blockquote>
 
-		<p class="spacer">
-		</p>
+      <hr />
 
-		<p class="company">
-			Wireless Ronin Canada / 2006 - Jan 2014 / Ontario, Canada
-		</p>
-		<p>
-			Developer (Lead / Architect) / Content Engineer / Flash Designer
-		</p>
-		<ul>
-			<li>
-				Web and mobile web application development using front-end technologies and the C# ASP.Net MVC framework
-			</li>
-			<li>
-				Integrated front-end JavaScript code with server side technology
-			</li>
-			<li>
-				Wrote in-house ActionScript tools to increase productivity across the team
-			</li>
-			<li>
-				Quick prototyping of client ideas to explore design and functionality
-			</li>
-			<li>
-				Ensured accuracy with designer created Photoshop files and images
-			</li>
-			<li>
-				Modified CSS to run on both modern and legacy browsers (including IE6/7/8)
-			</li>
-			<li>
-				Quoted hours required to create a solution and sett deadlines towards its completion
-			</li>
-			<li>
-				Studied new state-of-the-art technologies and their applications
-			</li>
-			<li class="project">
-				Chrysler "iShowroom" : kiosk, web, and mobile interfaces
-			</li>
-		</ul>
-		<ul class="sub-list">
-			<li>
-				C# / ASP.Net MVC / JavaScript / HTML / CSS
-			</li>
-			<li>
-				A virtual showroom for Chrysler dealers to utilize during sales. Functionality includes on the fly vehicle creation, wishlist
-				feature to find optimal car configurations, and displaying large quantities of data.
-			</li>
-		</ul>
-		<ul>
-			<li class="project">
-				Charles Schwabs stock ticker
-			</li>
-		</ul>
-		<ul class="sub-list">
-			<li>
-				HTML5 / JavaScript / RESTful API's
-			</li>
-			<li>
-				Browser backed ticker displaying stocks and news, front of shop, in Charles Schwabs San Francisco and New York locations.
-			</li>
-		</ul>
-		<ul>
-			<li class="project">
-				Buffalo Wild Wings football game
-			</li>
-		</ul>
-		<ul class="sub-list">
-			<li>
-				C# / ASP.Net MVC / JavaScript / HTML / CSS
-			</li>
-			<li>
-				An interactive signage application running in select Buffalo Wild Wings locations. Players use their mobile phones to connect
-				to the server and play virtual football and compete with other patrons.
-			</li>
-		</ul>
-		
-	</body>
+      <p>
+        <b> Independent / Nov 2015 - Mar 2018 / Ontario, Canada </b>
+      </p>
+      <p>
+        <u>Video Game Developer / Twitch Streamer</u>
+      </p>
+      <ul>
+        <li>Live-stream programming projects</li>
+        <li>
+          Share programming knowledge prompted by chat and current programming
+          tasks
+        </li>
+        <li>Work with a small team to develop an indy game</li>
+        <li>Participate in competitions to hone skills</li>
+      </ul>
+
+      <blockquote class="project">
+        <h6>Kin</h6>
+        <p>
+          <i> Unity / C# / XNA / MonoGame </i>
+        </p>
+
+        <p>
+          Adventure game with unique and ambitious features including
+          time-travel and teamwork mechanics. 2D top-down pixel art graphics and
+          a charming story. Started life in Unity and C# then ported to a custom
+          engine based on XNA/MonoGame.
+        </p>
+      </blockquote>
+
+      <blockquote class="project">
+        <h6>Deus Vult</h6>
+        <p>
+          <i> C# / XNA / MonoGame </i>
+        </p>
+
+        <p>
+          Ludum Dare 36 ("Ancient Technology") Game Jam competition entry using
+          the Kin game engine. Gameplay starts tactically with tile-based
+          maneuvering of units, then switches to side-scroller action
+          platforming for battles.
+        </p>
+
+        <a
+          href="https://www.youtube.com/watch?v=l5VP-jFr8pc&list=PLDX_Qg-t7jfZRzMBOpuW5W5rEZZDx91FG"
+        >
+          Twitch Stream Archive
+        </a>
+      </blockquote>
+
+      <blockquote class="project">
+        <h6>TwitchBamBot</h6>
+        <p>
+          <i> node.js / express / socket.io </i>
+        </p>
+
+        <p>
+          Chat bot for the channel. Easily extendable with many features.
+          Includes a live front-end UI that reacts to user's chat messages and
+          emotes.
+        </p>
+
+        <p>
+          <a href="https://github.com/awoitte/TwitchBamBot">Source Code</a>
+        </p>
+        <p>
+          <a
+            href="https://www.youtube.com/watch?v=l5VP-jFr8pc&list=PLDX_Qg-t7jfZRzMBOpuW5W5rEZZDx91FG"
+          >
+            Visible in Twitch Stream Archive Videos
+          </a>
+        </p>
+      </blockquote>
+
+      <hr />
+      <p>
+        <b>Confirmit Inc. / Feb 2014 - Nov 2015 / San Francisco, CA</b>
+      </p>
+      <p>
+        <u>Front-End Developer (Lead / Architect)</u>
+      </p>
+      <ul>
+        <li>
+          Create and maintain the front-end for web applications used by global
+          5000 companies
+        </li>
+        <li>
+          Take the initiative to design, build, and maintain a modular UI
+          framework to rapidly build applications
+        </li>
+        <li>
+          Teach bleeding-edge client-side development techniques to other
+          developers in the company
+        </li>
+        <li>
+          Follow the Agile development process, attend and host daily SCRUM
+          meetings
+        </li>
+        <li>
+          Use SVN and Git to manage software changes with other developers
+        </li>
+        <li>
+          Contribute to a continuous development process in order to smoothly
+          deliver a SaaS product
+        </li>
+      </ul>
+
+      <blockquote class="project">
+        <h6>Action Management</h6>
+        <p>
+          <i>
+            JavaScript / HTML5 / CSS / Backbone.js / Require.js / Mustache /
+            Grunt / Jasmine
+          </i>
+        </p>
+
+        <p>
+          A RESTful web app which identifies issues that customers have and
+          quickly assigns actions to resolve them. Implements a system managing
+          large amounts of customer survey data.
+        </p>
+
+        <p><a href="https://www.confirmit.com/">Company Website</a></p>
+      </blockquote>
+
+      <hr />
+
+      <p>
+        <b>Wireless Ronin Canada / 2006 - Jan 2014 / Ontario, Canada</b>
+      </p>
+      <p>
+        <u>Developer (Lead / Architect) / Content Engineer / Flash Designer</u>
+      </p>
+      <ul>
+        <li>
+          Web and mobile web application development using front-end
+          technologies and the C# ASP.Net MVC framework
+        </li>
+        <li>Integrate front-end JavaScript code with server side technology</li>
+        <li>
+          Write in-house ActionScript tools to increase productivity across the
+          team
+        </li>
+        <li>
+          Quick prototyping of client ideas to explore design and functionality
+        </li>
+        <li>
+          Ensure accuracy with designer created Photoshop files and images
+        </li>
+        <li>
+          Modify CSS to run on both modern and legacy browsers (including
+          IE6/7/8)
+        </li>
+        <li>
+          Quote hours required to create a solution and set deadlines towards
+          their completion
+        </li>
+        <li>Study new state-of-the-art technologies and their applications</li>
+      </ul>
+
+      <blockquote class="project">
+        <h6>Chrysler "iShowroom": kiosk, web, and mobile interfaces</h6>
+        <p>
+          <i>C# / ASP.Net MVC / JavaScript / HTML / CSS</i>
+        </p>
+
+        <p>
+          A virtual showroom for Chrysler dealers to utilize during sales.
+          Functionality includes on the fly vehicle creation, wishlist feature
+          to find optimal car configurations, and displaying large quantities of
+          data.
+        </p>
+      </blockquote>
+
+      <blockquote class="project">
+        <h6>Charles Schwabs stock ticker</h6>
+        <p>
+          <i>HTML5 / JavaScript / RESTful API's</i>
+        </p>
+
+        <p>
+          Browser backed ticker displaying stocks and news, front-of-shop in
+          Charles Schwabs San Francisco and New York locations.
+        </p>
+      </blockquote>
+
+      <blockquote class="project">
+        <h6>Buffalo Wild Wings football game</h6>
+        <p>
+          <i>C# / ASP.Net MVC / JavaScript / HTML / CSS</i>
+        </p>
+
+        <p>
+          An interactive signage application running in select Buffalo Wild
+          Wings locations. Players use their mobile phones to connect to the
+          server and play virtual football and compete with other patrons.
+        </p>
+      </blockquote>
+    </article>
+  </body>
 </html>
