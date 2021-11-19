@@ -27,6 +27,20 @@ body {
 
 .project {
   font-style: normal;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  position: relative;
+}
+
+.project::before {
+  content: "Project";
+  position: absolute;
+  background-color: var(--bg);
+  font-size: 0.75rem;
+  padding: 5px;
+  top: -1.25em;
+  left: calc(1em - 5px);
+  /* 1em to align with parent element text, -5px due to padding */
 }
 
 .project h6 {
